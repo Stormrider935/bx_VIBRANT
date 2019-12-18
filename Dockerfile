@@ -8,7 +8,7 @@ RUN conda config --add channels conda-forge && \
 
 
 RUN conda install -c bioconda vibrant scikit-learn==0.21.3
-RUN cd /opt/conda/share/vibrant-1.0.1/databases/ && python3 VIBRANT_setup.py && python3 VIBRANT_test_setup.py
+# RUN cd /opt/conda/share/vibrant-1.0.1/databases/ && python3 VIBRANT_setup.py && python3 VIBRANT_test_setup.py
 
 # RUN git clone https://github.com/AnantharamanLab/VIBRANT.git
 # RUN chmod 777 /VIBRANT/*
