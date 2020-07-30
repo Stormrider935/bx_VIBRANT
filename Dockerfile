@@ -1,5 +1,5 @@
 FROM continuumio/miniconda3
-RUN apt-get update && apt install -y  git gzip tar wget && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update && apt install -y procps git gzip tar wget && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN conda config --add channels conda-forge && \
     conda config --add channels bioconda && \
